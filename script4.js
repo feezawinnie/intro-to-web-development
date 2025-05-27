@@ -8,16 +8,15 @@ function compareNumbers(num1, num2) {
   var result = "";
 
   if (parseInt(num1, 10) > parseInt(num2, 10)) {
-    result = "The larger of " + num1 + " and " + num2 + " is " + num1 + ".";
+    return "The larger of " + num1 + " and " + num2 + " is " + num1 + ".";
   } else if (parseInt(num2, 10) > parseInt(num1, 10)) {
-    result = "The larger of " + num1 + " and " + num2 + " is " + num2 + ".";
+    return "The larger of " + num1 + " and " + num2 + " is " + num2 + ".";
   } else {
-    result = "The values " + num1 + " and " + num2 + " are equal. ";
+    return "The values " + num1 + " and " + num2 + " are equal. ";
   }
   // document.getElementById("output").innerHTML = result;
 }
-
-compareNumbers(num1, num2);
+console.log(compareNumbers(num1, num2));
 
 //var x = 3;
 //var y = -7;
@@ -26,14 +25,14 @@ function getProductSign(x, y, z) {
   let product = x * y * z;
 
   if (product > 0) {
-    alert("the sign is +");
+    return "the sign is +";
   } else if (product < 0) {
-    alert("the sign is -");
+    return "the sign is -";
   } else {
-    alert("the product is o");
+    return "the product is o";
   }
 }
-getProductSign(3, -7, 2);
+console.log(getProductSign(3, -7, 2));
 
 function sortNumbers(a, b, c) {
   let largest, middle, smallest;
@@ -67,10 +66,10 @@ function sortNumbers(a, b, c) {
       largest = a;
     }
   }
-  //alert("order: " + largest + "," + middle + "," + smallest + ".");
+  return "order: " + largest + "," + middle + "," + smallest + ".";
 }
 
-sortNumbers(0, -1, 4);
+console.log(sortNumbers(0, -1, 4));
 
 function findLargest(a, b, c, d, e) {
   let largest = a;
@@ -88,9 +87,9 @@ function findLargest(a, b, c, d, e) {
   if (e > largest) {
     largest = e;
   }
-  alert("the largest is : " + largest);
+  return "The largest is : " + largest;
 }
-findLargest(-5, -2, -6, 0, -1);
+console.log(findLargest(-5, -2, -6, 0, -1));
 
 let result = "";
 
@@ -101,7 +100,7 @@ for (let i = 0; i <= 15; i++) {
     result += i + " is odd<br>";
   }
 }
-
+console.log(result);
 // document.getElementById("result").innerHTML = result;
 
 let students = {
@@ -137,18 +136,33 @@ if (average < 60) {
 }
 
 let output = "average marks: " + average.toFixed(2) + "<br>grade: " + grade;
+console.log(output);
 // document.getElementById("average").innerHTML = output;
 
 for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    multiples(i + "fizzbuzz");
+    console.log(i + "fizzbuzz");
   } else if (i % 3 === 0) {
-    multiples(i + "fizz");
+    console.log(i + "fizz");
   } else if (i % 5 === 0) {
-    multiples(i + "buzz");
+    console.log(i + "buzz");
   } else {
-    multiples(i);
+    console.log(i);
   }
 }
-// document.getElementById("multiple").innerHTML = multiples;
-console.log("princess");
+
+/*function reverseString(str) 
+  return str.split('').reverse().join('');
+  const myString = "hello world";
+console.log("Original:", myString);
+console.log("Reversed:", reverseString(myString));*/
+
+function reversestring(word) {
+  let message = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    message = message + word[i];
+  }
+  return message;
+}
+
+console.log(reversestring("nam"));
