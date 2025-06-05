@@ -8,6 +8,115 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: none;
   max-width: 100%;
+  
+}
+Html{
+scroll-behavior: smooth;
 }
 
 /* Write your code below this */
+.navbar{
+  width:100%;
+  padding:26px 60px;
+  display:flex;
+  justify-content: space-between;
+}
+.list-items ul {
+  list-style: none;          
+  display: flex;              
+  gap: 30px;                  
+  margin: 0;                  
+  padding: 0;                 
+  align-items: center;        
+}
+
+.Hero{
+  background-image:url('images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+}
+h1{
+  font-size:36px ;
+  margin-bottom: 15px;
+}
+
+button{
+  padding: 12px 30px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+}
+
+  .journey{
+    background:#618379 ;
+    padding: 57px 0;
+  }
+
+  h2{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 57px;
+  }
+
+  .journey-list{
+    display: flex;
+    width: 80%;
+    margin:0 10%;
+    justify-content: space-between;
+  }
+
+  .journey-card{
+    width: 30%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 40px;
+    color: gray;
+  }
+
+  .journey-img{
+    border-radius: 25px;
+    margin-bottom: 25px;
+  }
+
+  h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: black;
+  }
+
+  footer{
+    background: #333232;
+    text-align:center;
+    color:white;
+    padding: 30px;
+  }
+
+  .about-me {
+    padding: 60px 60px;
+    text-align: center;
+    margin: 10px  50px;
+  }
+
+  .about{
+  margin-bottom: 20px;
+  font-size: medium;
+
+}
+
+  
+.goals {
+  padding: 60px 60px;
+  text-align: center;
+  margin: 10px  50px;
+}
+
+
+.goal{
+  margin-bottom: 20px;
+  font-size: medium;
+
+}
